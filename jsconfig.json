@@ -1,0 +1,14 @@
+// Vetur插件的配置
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/components/*": [
+                "src/components/*"
+            ]
+        }
+    }
+}
