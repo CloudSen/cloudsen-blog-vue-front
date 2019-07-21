@@ -11,6 +11,7 @@ export default {
 </script>
 
 <style>
+/* 添加Hack字体CDN */
 @import "https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/fonts/hack-bold-subset.woff";
 * {
   padding: 0;

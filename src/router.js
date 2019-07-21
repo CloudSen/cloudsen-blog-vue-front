@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home'
+import Welcome from '@/views/Welcome'
+import Home from '@/views/Home'
 
 Vue.use(Router)
 
@@ -9,7 +10,12 @@ export default new Router({
     {
       path: '/',
       name: '/',
-      component: Home,
+      component: Welcome,
+    },
+    {
+      path: '/cloudable',
+      name: '/cloudable',
+      component: (Home),
       children: [
         {
           path: 'blog',
