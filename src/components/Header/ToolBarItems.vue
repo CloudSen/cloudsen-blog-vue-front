@@ -14,7 +14,7 @@
             hide-details
             label="Search Article"
             solo-inverted
-            v-model="searchText"
+            v-model.trim="searchText"
           ></v-text-field>
         </v-form>
       </v-sheet>
@@ -68,11 +68,11 @@ export default {
       return fn(menus, '0')
     },
     onSearchInput () {
-      this.searchText = this.searchText.trim()
+      console.log(this.searchText)
     },
     onSearch () {
       if (this.searchText) {
-        this.$message(`Searching Article: ${this.searchText}`)
+        console.log(this.searchText)
       }
     },
   },
