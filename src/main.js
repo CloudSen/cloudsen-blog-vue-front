@@ -8,6 +8,12 @@ import store from './store'
 Vue.use(Fragment.Plugin)
 Vue.config.productionTip = false
 
+router.beforeEach((to, from, next) => {
+  console.log(`VueRouter to: ${to}, from: ${from}`)
+  store.commit('cleanAllSnack')
+  next()
+})
+
 new Vue({
   router,
   store,
