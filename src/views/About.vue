@@ -1,16 +1,48 @@
 <template>
   <v-container
     class="grey lighten-4 black--text"
-    fill-height
     grid-list-xs
+    my-2
   >
-    <v-layout
-      row
-      wrap
-    >
-      <v-flex xs12>
-        <h1>This is an about page</h1>
-      </v-flex>
-    </v-layout>
+    <textarea
+      class="md-text"
+      rows="10"
+      v-model="content"
+    />
+    <markdown-it-vue
+      :content="content"
+      :options="options"
+      class="md-body"
+    />
   </v-container>
 </template>
+
+<script>
+import MarkdownItVue from 'markdown-it-vue'
+import MarkdownText from '@/components/temp-data/testMarkDown'
+import 'markdown-it-vue/dist/markdown-it-vue.css'
+
+export default {
+  components: {
+    MarkdownItVue,
+  },
+  data () {
+    return {
+      content: MarkdownText,
+      options: {
+        markdownIt: {
+          linkify: true,
+          html: true,
+        },
+        linkAttributes: {
+          target: '_blank',
+          rel: 'noopener',
+        },
+      },
+    }
+  },
+}
+</script>
+
+<style>
+</style>
