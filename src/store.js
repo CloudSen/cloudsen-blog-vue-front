@@ -17,7 +17,7 @@ export default new Vuex.Store({
       if (queue.length > 1) {
         queue.forEach((snack, index) => {
           const styleObj = { cssStyle: {} }
-          styleObj.cssStyle.marginTop = `${(index) * 60}px`
+          styleObj.cssStyle.marginBottom = `${(index) * 60}px`
           newQueue.push(Object.assign({}, snack, styleObj))
         })
         return newQueue
@@ -43,11 +43,12 @@ export default new Vuex.Store({
       if (queue.length >= 6) {
         const needRemove = queue
           .filter(snack => snack.color !== 'error')
-          .pop()
+          .shift()
         // needRemove是undefined，说明队列中都是重要消息，indexOf返回-1，此时splice和pop作用一样
-        queue.splice(queue.indexOf(needRemove), 1)
+        const removeIndex = queue.indexOf(needRemove)
+        queue.splice(removeIndex === -1 ? 0 : removeIndex, 1)
       }
-      queue.unshift(payload)
+      queue.push(payload)
     },
     /**
      * @summary 根据消息ID删除消息队列中的消息
