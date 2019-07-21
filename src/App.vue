@@ -26,4 +26,8 @@ html {
 code {
   font: 14px/1.5 Hack, Consolas, Monaco, Menlo;
 }
+
+nav {
+  z-index: 999 !important;
+}
 </style>
