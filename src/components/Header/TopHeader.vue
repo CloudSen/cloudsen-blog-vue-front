@@ -29,10 +29,9 @@ export default {
   components: {
     ToolBarItems,
   },
-  data () {
-    return {
-    }
-  },
+  data: () => ({
+
+  }),
 }
 </script>
 
