@@ -12,16 +12,28 @@ export default new Router({
       component: Home,
       children: [
         {
+          path: 'blog',
+          name: 'blog',
+          title: '个人博客',
+          component: () => import('@/views/Blog'),
+        },
+        {
+          path: 'topic',
+          name: 'topic',
+          title: '专题',
+          component: () => import('@/views/Topic'),
+        },
+        {
+          path: 'my-project',
+          name: 'my-project',
+          title: '我的项目',
+          component: () => import('@/views/MyProject'),
+        },
+        {
           path: 'about',
           name: 'about',
           title: '关于',
-          component: () => import('./views/About'),
-        },
-        {
-          path: 'markdown',
-          name: 'markdown',
-          title: '测试MD',
-          component: () => import('./views/MarkDown'),
+          component: () => import('@/views/About'),
         },
       ],
     },
