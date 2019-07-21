@@ -11,10 +11,10 @@
     <template v-slot:extension>
       <v-toolbar-title>
         <span
-          class="font-weight-thin text-truncate subheading hidden-xs-only"
+          :class="`font-weight-thin text-truncate hidden-xs-only ${headerTextClass}`"
         >「 青，取之于蓝，而青于蓝；冰，水为之，而寒于水。」</span>
         <span
-          class="font-weight-thin text-truncate subheading hidden-sm-and-up"
+          :class="`font-weight-thin text-truncate hidden-sm-and-up ${headerTextClass}`"
         >「 一日无二晨，时过不再临。 」</span>
       </v-toolbar-title>
     </template>
@@ -32,6 +32,12 @@ export default {
   data: () => ({
 
   }),
+  computed: {
+    headerTextClass () {
+      console.log(this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline')
+      return this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline'
+    },
+  },
 }
 </script>
 
