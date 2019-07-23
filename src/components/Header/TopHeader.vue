@@ -4,7 +4,7 @@
     class="blue darken-3"
     extended
   >
-    <v-toolbar-side-icon></v-toolbar-side-icon>
+    <v-toolbar-side-icon @click.stop="triggerDrawer"></v-toolbar-side-icon>
     <v-toolbar-title>Cloudable</v-toolbar-title>
     <v-spacer></v-spacer>
     <ToolBarItems></ToolBarItems>
@@ -22,6 +22,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex'
 import ToolBarItems from '@/components/Header/ToolBarItems'
 
 export default {
@@ -37,6 +38,9 @@ export default {
       console.log(this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline')
       return this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline'
     },
+  },
+  methods: {
+    ...mapMutations(['triggerDrawer']),
   },
 }
 </script>
