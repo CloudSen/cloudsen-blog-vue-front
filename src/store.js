@@ -8,6 +8,7 @@ export default new Vuex.Store({
     snackMessageQueue: [
 
     ],
+    showDrawer: false,
   },
   getters: {
     getAllSnackMessageWithStyle (state) {
@@ -80,6 +81,12 @@ export default new Vuex.Store({
     cleanAllSnack (state) {
       console.log('VUEX clean all snack message...')
       state.snackMessageQueue.length = 0
+    },
+    triggerDrawer (state) {
+      state.showDrawer = !state.showDrawer
+    },
+    setDrawer (state, value) {
+      state.showDrawer = value
     },
   },
   actions: {
