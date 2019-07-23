@@ -28,10 +28,6 @@ code {
   font: 14px/1.5 Hack, Consolas, Monaco, Menlo;
 }
 
-nav {
-  z-index: 999 !important;
-}
-
 /* 滚动条样式 */
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
