@@ -3,6 +3,7 @@
     <TopHeader></TopHeader>
     <MainContent></MainContent>
     <Drawer></Drawer>
+    <GoTopButton></GoTopButton>
   </fragment>
 </template>
 
@@ -10,6 +11,7 @@
 import TopHeader from '@/components/Header/TopHeader'
 import MainContent from '@/components/Main/MainContent'
 import Drawer from '@/components/Aside/NavDrawer'
+import GoTopButton from '@/components/Main/RightSideButton'
 
 export default {
   name: 'home',
@@ -17,6 +19,7 @@ export default {
     TopHeader,
     MainContent,
     Drawer,
+    GoTopButton,
   },
 }
 </script>
