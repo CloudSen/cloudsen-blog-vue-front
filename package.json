@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "highlight.js": "^9.15.8",
+    "markdown-it": "^9.0.1",
     "particles.js": "^2.0.0",
     "vue": "^2.6.10",
     "vue-fragment": "^1.5.1",
