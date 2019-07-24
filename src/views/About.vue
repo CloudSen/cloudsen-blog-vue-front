@@ -1,19 +1,20 @@
 <template>
   <v-container
-    class="grey lighten-4 black--text"
+    class="grey darken-4 grey--text text-lighten-4"
     grid-list-xs
-    my-2
   >
-    <textarea
-      class="md-text"
-      rows="10"
-      v-model="content"
-    />
+    <div
+      class="grey darken-4 grey--text text-lighten-4 markdown-body"
+      v-html="renderContent"
+    ></div>
   </v-container>
 </template>
 
 <script>
 import MarkdownText from '@/components/temp-data/testMarkDown'
+import md from '@/plugins/markdown-it'
+import '@/assets/css/markdown/md-dark.css'
+import 'highlight.js/styles/xt256.css'
 
 export default {
   components: {
@@ -33,6 +34,11 @@ export default {
         },
       },
     }
+  },
+  computed: {
+    renderContent () {
+      return md.render(MarkdownText)
+    },
   },
 }
 </script>
