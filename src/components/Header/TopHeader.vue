@@ -35,7 +35,6 @@ export default {
   }),
   computed: {
     headerTextClass () {
-      console.log(this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline')
       return this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline'
     },
   },
