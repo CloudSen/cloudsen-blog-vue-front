@@ -2,7 +2,7 @@ export default [
   {
     id: '1',
     name: '首页',
-    routerPath: '/cloudable',
+    routerPath: '/cloudable/home-page',
     icon: 'home',
     order: 1,
   },

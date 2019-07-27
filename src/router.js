@@ -16,7 +16,14 @@ export default new Router({
       path: '/cloudable',
       name: '/cloudable',
       component: (Home),
+      redirect: '/cloudable/home-page',
       children: [
+        {
+          path: 'home-page',
+          name: 'home-page',
+          title: '首页',
+          component: () => import('@/views/Cloudable'),
+        },
         {
           path: 'blog',
           name: 'blog',

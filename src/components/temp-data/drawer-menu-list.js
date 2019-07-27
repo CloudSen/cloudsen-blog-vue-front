@@ -12,7 +12,7 @@ export default [
     parentId: '1',
     type: 2,
     name: '首页',
-    routerPath: '/cloudable',
+    routerPath: '/cloudable/home-page',
     icon: 'home',
     order: 1,
   },
