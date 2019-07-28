@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import ParallaxyDiv from '@/components/Cloudable/ParallaxyDiv'
-import TransitionDiv from '@/components/Cloudable/TransitionDiv'
+import ParallaxyDiv from '@/components/Main/Cloudable/ParallaxyDiv'
+import TransitionDiv from '@/components/Main/Cloudable/TransitionDiv'
 import tempData from '@/components/temp-data/cloudable-data'
 
 export default {
