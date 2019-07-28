@@ -1,4 +1,5 @@
 # cloudsen-blog-vue-front
+![blog](https://s2.ax1x.com/2019/07/28/elh2Hf.png)  
 
 ## Project setup
 ```
@@ -29,6 +30,3 @@ npm run lint
 ```
 npm run test:unit
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
