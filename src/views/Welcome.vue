@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import ParticlesBackground from '@/components/ParticlesBackground'
+import ParticlesBackground from '@/components/Welcome/ParticlesBackground'
 
 export default {
   name: 'welcome',
