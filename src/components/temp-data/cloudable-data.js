@@ -4,7 +4,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("/df-1.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEZqI.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -13,7 +13,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("/df-1-mobile.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEVsA.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -40,7 +40,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("/br-1.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elE8Mj.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -49,7 +49,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("/br-1-mobile.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEiGD.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -76,7 +76,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("/m-1.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elE0WF.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -85,7 +85,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("/m-1-mobile.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elElRg.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -112,7 +112,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("/csgo-2.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEEMd.jpg")',
       height: '50vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -121,7 +121,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("/csgo-2-mobile.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEkxH.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -137,7 +137,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("/csgo-1.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEmZt.jpg")',
       height: '50vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -146,7 +146,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("/csgo-1-mobile.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEFRe.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -173,7 +173,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("/dp-end.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEMi8.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -182,7 +182,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("/dp-end.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elEQJS.jpg")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',

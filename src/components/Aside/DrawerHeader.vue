@@ -2,7 +2,7 @@
   <v-img
     :aspect-ratio="16/9"
     gradient="to left bottom, rgba(100,115,201,.33), rgba(25,32,72,.5)"
-    src="/drawer-img.png"
+    src="https://s2.ax1x.com/2019/07/28/elEjfS.png"
   >
     <v-layout
       class="lightbox white--text"
