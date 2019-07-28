@@ -11,33 +11,21 @@
 </template>
 
 <script>
-import MarkdownText from '@/components/temp-data/testMarkDown'
+import AboutMe from '@/components/temp-data/about-me'
 import md from '@/plugins/markdown-it'
 import '@/assets/css/markdown/md-dark.css'
 import 'highlight.js/styles/xt256.css'
 
 export default {
-  components: {
-
-  },
+  name: 'about',
   data () {
     return {
-      content: MarkdownText,
-      options: {
-        markdownIt: {
-          linkify: true,
-          html: true,
-        },
-        linkAttributes: {
-          target: '_blank',
-          rel: 'noopener',
-        },
-      },
+      content: AboutMe,
     }
   },
   computed: {
     renderContent () {
-      return md.render(MarkdownText)
+      return md.render(AboutMe)
     },
   },
 }
