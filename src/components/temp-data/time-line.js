@@ -181,6 +181,7 @@ export default [
     content: `
     设计并实现首页视差效果；
     加入图床来托管图片；
+    顶栏格言随机获取；
     `,
     color: 'green darken-3',
   },
