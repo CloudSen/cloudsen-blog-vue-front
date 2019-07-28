@@ -12,10 +12,10 @@
       <v-toolbar-title>
         <span
           :class="`font-weight-thin text-truncate hidden-xs-only ${headerTextClass}`"
-        >「 青，取之于蓝，而青于蓝；冰，水为之，而寒于水。」</span>
+        >{{motto.common}}</span>
         <span
           :class="`font-weight-thin text-truncate hidden-sm-and-up ${headerTextClass}`"
-        >「 一日无二晨，时过不再临。 」</span>
+        >{{motto.mobile}}</span>
       </v-toolbar-title>
     </template>
   </v-toolbar>
@@ -24,15 +24,18 @@
 <script>
 import { mapMutations } from 'vuex'
 import ToolBarItems from '@/components/Header/ToolBarItems'
+import mottoData from '@/components/temp-data/header-motto'
 
 export default {
   name: 'top-header',
   components: {
     ToolBarItems,
   },
-  data: () => ({
-
-  }),
+  data () {
+    return {
+      motto: this.getRandomMotto(mottoData),
+    }
+  },
   computed: {
     headerTextClass () {
       return this.$vuetify.breakpoint.smAndDown ? 'subheading' : 'headline'
@@ -40,6 +43,12 @@ export default {
   },
   methods: {
     ...mapMutations(['triggerDrawer']),
+    getRandomMotto (tempList) {
+      const common = tempList[Math.floor(Math.random() * tempList.length)].content
+      const mobileList = tempList.filter(item => item.type === 1)
+      const mobile = mobileList[Math.floor(Math.random() * mobileList.length)].content
+      return { common, mobile }
+    },
   },
 }
 </script>
