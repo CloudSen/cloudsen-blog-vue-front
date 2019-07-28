@@ -33,7 +33,6 @@ export default {
   },
   methods: {
     onResize () {
-      console.log(`isMobile: ${this.isMobile}`)
       if (this.$vuetify.breakpoint.xsOnly) {
         this.isMobile = true
       } else {
@@ -46,11 +45,9 @@ export default {
   },
   watch: {
     isMobile (val) {
-      console.log(`isMobile: ${val}`)
       this.dataList.forEach((data) => {
         Object.assign(data, { isMobile: val })
       })
-      console.log(JSON.stringify(this.dataList))
     },
   },
 }
