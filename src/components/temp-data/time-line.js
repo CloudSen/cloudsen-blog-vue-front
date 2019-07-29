@@ -194,4 +194,13 @@ export default [
     `,
     color: 'green darken-3',
   },
+  {
+    id: '21',
+    opposite: '2019-07-29',
+    title: '完成博客文章的展示',
+    content: `
+    大屏幕展示3列文章卡片，小屏幕2~1列。小屏幕文章卡片不会显示更新时间。
+    `,
+    color: 'green darken-3',
+  },
 ]
