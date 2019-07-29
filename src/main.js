@@ -9,7 +9,7 @@ Vue.use(Fragment.Plugin)
 Vue.config.productionTip = false
 
 router.beforeEach((to, from, next) => {
-  console.log(`VueRouter to: ${to}, from: ${from}`)
+  console.log(`VueRouter to: ${to.fullPath}, from: ${from.fullPath}, next: ${next.name}`)
   store.commit('cleanAllSnack')
   next()
 })
