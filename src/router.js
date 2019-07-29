@@ -29,6 +29,14 @@ export default new Router({
           name: 'blog',
           title: '个人博客',
           component: () => import('@/views/Blog'),
+          children: [
+            {
+              path: 'articles/:id',
+              name: 'articleDetail',
+              title: '文章详情',
+              component: () => import('@/views/ArticleDetail'),
+            },
+          ],
         },
         {
           path: 'topic',
