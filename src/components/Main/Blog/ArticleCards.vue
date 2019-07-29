@@ -11,7 +11,6 @@
         <v-img
           :aspect-ratio="16/9"
           :src="card.img_url_md"
-          height="200px"
         ></v-img>
         <v-card-title>
           <div>

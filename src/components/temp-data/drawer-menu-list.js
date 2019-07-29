@@ -21,7 +21,7 @@ export default [
     parentId: '1',
     type: 2,
     name: '个人博客',
-    routerPath: '/cloudable/blog',
+    routerPath: '/cloudable/blog/articles',
     icon: 'book',
     order: 2,
   },

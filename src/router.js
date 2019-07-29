@@ -29,7 +29,14 @@ export default new Router({
           name: 'blog',
           title: '个人博客',
           component: () => import('@/views/Blog'),
+          redirect: '/cloudable/blog/articles',
           children: [
+            {
+              path: 'articles',
+              name: 'articleList',
+              title: '文章列表',
+              component: () => import('@/views/Articles'),
+            },
             {
               path: 'articles/:id',
               name: 'articleDetail',

@@ -5,7 +5,10 @@
         :key="tag.id"
         shrink
       >
-        <v-btn :color="tag.color">
+        <v-btn
+          :color="tag.color"
+          @click.stop
+        >
           <v-icon left>loyalty</v-icon>
           {{tag.name}}
         </v-btn>

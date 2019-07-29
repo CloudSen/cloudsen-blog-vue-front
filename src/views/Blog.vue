@@ -1,21 +1,14 @@
 <template>
   <fragment>
-    <ArticleList :cards="cards"></ArticleList>
+    <router-view></router-view>
   </fragment>
 </template>
 
 <script>
-import ArticleList from '@/components/Main/Blog/ArticleList'
-import ArticleSourceData from '@/components/temp-data/articles'
+
 
 export default {
   name: 'blog',
-  components: {
-    ArticleList,
-  },
-  data: () => ({
-    cards: ArticleSourceData,
-  }),
 }
 </script>
 
