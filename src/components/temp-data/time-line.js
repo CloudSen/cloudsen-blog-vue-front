@@ -9,6 +9,7 @@ export default [
     大致选择了Django和Bootstrap for material design。
     现在没其他想法，就想好好工作。
     希望每天工作回家后就能访问自己的网站，一边听着音乐，一边写写文章。
+    然后将自己学习的新技术，应用于博客中。
     简简单单就好。`,
     color: 'blue darken-3',
   },
