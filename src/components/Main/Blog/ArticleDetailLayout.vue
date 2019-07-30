@@ -3,7 +3,7 @@
     <div>
       <v-img
         :aspect-ratio="16/9"
-        src="https://s1.ax1x.com/2018/12/20/FD6b60.png"
+        src="https://res.cloudinary.com/practicaldev/image/fetch/s--6xZ4JmSD--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/8bees1ilfgpdcqdr4m9j.jpg"
       ></v-img>
     </div>
     <v-alert

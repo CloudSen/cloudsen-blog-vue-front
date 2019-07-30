@@ -1,8 +1,8 @@
 <template>
   <fragment>
-    <template v-for="tag in tags">
+    <template v-for="(tag, index) in tags">
       <v-flex
-        :key="tag.id"
+        :key="`${tag.id}-${index}`"
         shrink
       >
         <v-btn
