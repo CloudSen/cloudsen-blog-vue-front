@@ -25,7 +25,7 @@ export default [
     readCount: 23,
     tags: [
       {
-        id: '1',
+        id: '2',
         name: 'java',
         color: 'blue lighten-1',
       },
@@ -59,7 +59,7 @@ export default [
     readCount: 23,
     tags: [
       {
-        id: '1',
+        id: '2',
         name: 'java',
         color: 'blue lighten-1',
       },
@@ -93,7 +93,7 @@ export default [
     readCount: 23,
     tags: [
       {
-        id: '1',
+        id: '2',
         name: 'java',
         color: 'blue lighten-1',
       },
@@ -127,7 +127,7 @@ export default [
     readCount: 23,
     tags: [
       {
-        id: '1',
+        id: '2',
         name: 'java',
         color: 'blue lighten-1',
       },
