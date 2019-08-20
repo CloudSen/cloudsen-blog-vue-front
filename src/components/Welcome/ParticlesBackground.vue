@@ -25,14 +25,14 @@ export default {
         {
           particles: {
             number: {
-              value: 71,
+              value: 80,
               density: {
                 enable: true,
-                value_area: 1523.2414578222467,
+                value_area: 800,
               },
             },
             color: {
-              value: '#2c00fc',
+              value: '#02a5ff',
             },
             shape: {
               type: 'circle',
@@ -41,7 +41,7 @@ export default {
                 color: '#000000',
               },
               polygon: {
-                nb_sides: 3,
+                nb_sides: 5,
               },
               image: {
                 src: 'img/github.svg',
@@ -71,16 +71,16 @@ export default {
             },
             line_linked: {
               enable: true,
-              distance: 144.30708547789706,
-              color: '#d23f3f',
+              distance: 150,
+              color: '#02a5ff',
               opacity: 0.4,
-              width: 20,
+              width: 1,
             },
             move: {
               enable: true,
               speed: 6,
               direction: 'none',
-              random: true,
+              random: false,
               straight: false,
               out_mode: 'out',
               bounce: false,
