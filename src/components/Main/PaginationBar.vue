@@ -3,6 +3,7 @@
     flat
     fluid
     grid-list-xs
+    v-if="page.pages > 1"
   >
     <v-layout
       justify-center
@@ -11,13 +12,13 @@
     >
       <v-flex shrink>
         <v-pagination
-          :length="pageable.pageSize"
+          :length="page.pages"
           @input="onPageChange"
           @next="onNext"
           @previous="onPrevious"
           circle
           total-visible="5"
-          v-model="pageable.pageNumber"
+          v-model="page.current"
         ></v-pagination>
       </v-flex>
     </v-layout>
@@ -28,7 +29,7 @@
 export default {
   name: 'paginationBar',
   props: {
-    pageable: {
+    page: {
       type: Object,
       required: true,
     },
