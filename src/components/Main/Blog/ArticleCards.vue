@@ -38,10 +38,7 @@
               row
               wrap
             >
-              <v-flex
-                hidden-xs-only
-                shrink
-              >
+              <v-flex shrink>
                 <v-btn
                   class="grey--text"
                   flat
@@ -57,15 +54,6 @@
                 >
                   <v-icon left>comment</v-icon>
                   {{card.commentCount}}
-                </v-btn>
-              </v-flex>
-              <v-flex shrink>
-                <v-btn
-                  class="grey--text"
-                  flat
-                >
-                  <v-icon left>visibility</v-icon>
-                  {{card.readCount}}
                 </v-btn>
               </v-flex>
             </v-layout>
