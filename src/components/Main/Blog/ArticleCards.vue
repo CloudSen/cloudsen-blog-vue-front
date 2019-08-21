@@ -47,7 +47,7 @@
                   {{card.updateTime}}
                 </v-btn>
               </v-flex>
-              <v-flex shrink>
+              <!-- <v-flex shrink>
                 <v-btn
                   class="grey--text"
                   flat
@@ -55,7 +55,7 @@
                   <v-icon left>comment</v-icon>
                   {{card.commentCount}}
                 </v-btn>
-              </v-flex>
+              </v-flex>-->
             </v-layout>
           </v-container>
         </v-card-actions>
