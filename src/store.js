@@ -9,6 +9,13 @@ export default new Vuex.Store({
 
     ],
     showDrawer: false,
+    articleListPage: {
+      size: 20,
+      current: 1,
+      total: 0,
+      pages: 0,
+    },
+    articleListCards: [],
   },
   getters: {
     getAllSnackMessageWithStyle (state) {
@@ -87,6 +94,13 @@ export default new Vuex.Store({
     },
     setDrawer (state, value) {
       state.showDrawer = value
+    },
+    updateArticleListPage (state, payload) {
+      console.log(`VUEX updating article list page ${JSON.stringify(payload)}`)
+      state.articleListPage = payload
+    },
+    updateArticleListCards (state, payload) {
+      state.articleListCards = payload
     },
   },
   actions: {
