@@ -44,9 +44,7 @@ export default {
     ...mapMutations([
       'updateArticleListCards',
     ]),
-    onPageChange (newPage) {
-      console.log(this)
-      console.log(`page changes, newPage: ${newPage}, page: ${JSON.stringify(this.articleListPage)}`)
+    onPageChange () {
       this.fetchArticleSummaryData()
     },
     fetchArticleSummaryData () {
