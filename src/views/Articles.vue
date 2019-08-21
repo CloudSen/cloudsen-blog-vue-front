@@ -1,11 +1,12 @@
 <template>
   <div>
-    <ArticleList :cards="cards"></ArticleList>
-    <PaginationBar :page="page"></PaginationBar>
+    <ArticleList :cards="this.articleListCards"></ArticleList>
+    <PaginationBar :page="this.articleListPage"></PaginationBar>
   </div>
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
 import ArticleList from '@/components/Main/Blog/ArticleList'
 // import ArticleSourceData from '@/components/temp-data/articles'
 import PaginationBar from '@/components/Main/PaginationBar'
@@ -19,21 +20,32 @@ export default {
   },
   data () {
     return {
-      cards: [],
-      page: {
-        size: 20,
-        current: 1,
-        total: 1,
-        pages: 1,
-      },
+
     }
   },
+  computed: {
+    ...mapState([
+      'articleListPage',
+      'articleListCards',
+    ]),
+  },
   methods: {
+    ...mapMutations([
+      'updateArticleListPage',
+      'updateArticleListCards',
+    ]),
     fetchArticleSummaryData () {
-      api.articleApi.pageArticleSummaryByCondition(this.page)
+      api.articleApi.pageArticleSummaryByCondition(this.articleListPage)
         .then((response) => {
-          console.log(response.data)
-          this.cards = response.data.records
+          const { data } = response
+          console.log(data.records)
+          this.updateArticleListCards(data.records)
+          this.updateArticleListPage({
+            size: data.size,
+            current: data.current,
+            total: data.total,
+            pages: data.pages,
+          })
         })
         .catch((error) => {
           console.error(error)
