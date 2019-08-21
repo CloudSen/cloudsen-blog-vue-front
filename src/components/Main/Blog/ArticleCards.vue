@@ -3,14 +3,14 @@
     <v-hover>
       <v-card
         :class="`elevation-${hover ? 24 : 2}`"
-        :to="`/cloudable/blog/articles/${card.id}`"
+        :to="`/cloudable/blog/articles/${card.uuid}`"
         class="grey--text"
         exact
         slot-scope="{ hover }"
       >
         <v-img
           :aspect-ratio="16/9"
-          :src="card.img_url_md"
+          :src="card.imgUrlMd"
         ></v-img>
         <v-card-title>
           <div>

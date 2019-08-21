@@ -33,6 +33,7 @@ export default {
     ...mapMutations([
       'updateArticleListPage',
       'updateArticleListCards',
+      'resetArticleListPage',
     ]),
     fetchArticleSummaryData () {
       api.articleApi.pageArticleSummaryByCondition(this.articleListPage)
@@ -52,8 +53,11 @@ export default {
         })
     },
   },
-  created () {
+  mounted () {
     this.fetchArticleSummaryData()
+  },
+  created () {
+    this.resetArticleListPage()
   },
 }
 </script>
