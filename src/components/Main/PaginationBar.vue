@@ -14,8 +14,6 @@
         <v-pagination
           :length="page.pages"
           @input="onPageChange"
-          @next="onNext"
-          @previous="onPrevious"
           circle
           total-visible="5"
           v-model="page.current"
@@ -26,6 +24,9 @@
 </template>
 
 <script>
+import { mapState, mapMutations } from 'vuex'
+import api from '@/api/api'
+
 export default {
   name: 'paginationBar',
   props: {
@@ -34,10 +35,30 @@ export default {
       required: true,
     },
   },
+  computed: {
+    ...mapState([
+      'articleListPage',
+    ]),
+  },
   methods: {
-    onNext () {},
-    onPrevious () {},
-    onPageChange () {},
+    ...mapMutations([
+      'updateArticleListCards',
+    ]),
+    onPageChange (newPage) {
+      console.log(this)
+      console.log(`page changes, newPage: ${newPage}, page: ${JSON.stringify(this.articleListPage)}`)
+      this.fetchArticleSummaryData()
+    },
+    fetchArticleSummaryData () {
+      api.articleApi.pageArticleSummaryByCondition(this.articleListPage)
+        .then((response) => {
+          const { data } = response
+          this.updateArticleListCards(data.records)
+        })
+        .catch((error) => {
+          console.error(error)
+        })
+    },
   },
 }
 </script>
