@@ -10,7 +10,7 @@ export default new Vuex.Store({
     ],
     showDrawer: false,
     articleListPage: {
-      size: 20,
+      size: 15,
       current: 1,
       total: 0,
       pages: 0,
@@ -101,6 +101,14 @@ export default new Vuex.Store({
     },
     updateArticleListCards (state, payload) {
       state.articleListCards = payload
+    },
+    resetArticleListPage (state) {
+      state.articleListPage = {
+        size: 15,
+        current: 1,
+        total: 0,
+        pages: 0,
+      }
     },
   },
   actions: {
