@@ -76,7 +76,7 @@ export default [
     type: 0,
     isMobile: false,
     style: {
-      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elE0WF.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/08/22/maNolT.png")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
@@ -85,7 +85,7 @@ export default [
       textAlign: 'center',
     },
     mobileStyle: {
-      backgroundImage: 'url("https://s2.ax1x.com/2019/07/28/elElRg.jpg")',
+      backgroundImage: 'url("https://s2.ax1x.com/2019/08/22/maNT6U.png")',
       height: '100vh',
       backgroundAttachment: 'fixed',
       backgroundPosition: 'center',
