@@ -38,7 +38,7 @@ export default new Router({
               component: () => import('@/views/Articles'),
             },
             {
-              path: 'articles/:id',
+              path: 'articles/:uuid',
               name: 'articleDetail',
               title: '文章详情',
               component: () => import('@/views/ArticleDetail'),
