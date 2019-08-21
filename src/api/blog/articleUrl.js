@@ -13,6 +13,12 @@ const articleUrl = {
     const url = '/cloudable-blog/blog/article/page'
     return USE_EOLINKER ? eolinkerUrl : url
   },
+  // 根据文章ID，查询文章详情
+  findArticleDetailById (articleId) {
+    const eolinkerUrl = ''
+    const url = `/cloudable-blog/blog/article/${articleId}`
+    return USE_EOLINKER ? eolinkerUrl : url
+  },
 }
 
 export default articleUrl

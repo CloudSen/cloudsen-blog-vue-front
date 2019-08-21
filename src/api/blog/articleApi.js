@@ -16,6 +16,10 @@ const articleApi = {
       },
     )
   },
+  // 根据文章ID，查询文章详情
+  findArticleDetailById (articleId) {
+    return axios.get(articleUrl.findArticleDetailById(articleId))
+  },
 }
 
 export default articleApi
